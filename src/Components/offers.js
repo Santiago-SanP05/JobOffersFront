@@ -13,6 +13,9 @@ export const renderOfferPage = async (listContainerId, detailsContainerId) => {
         button.className = "w-full text-left bg-white border p-4 rounded-lg shadow mb-3 hover:bg-gray-100 transition";
         button.dataset.id = offer.id;
 
+
+
+
         button.innerHTML = `
             <h2 class="text-lg font-semibold">${offer.title}</h2>
             <p class="text-sm text-gray-600">${offer.zone}</p>
@@ -36,7 +39,3 @@ export const renderOfferPage = async (listContainerId, detailsContainerId) => {
         listContainer.appendChild(button);
     });
 };
-
-export const console = async () => {
-    console.log("Hola mundo");
-}
