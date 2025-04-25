@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import { GetAllOffers } from './service/offersService.js';
+
+        window.mostrarOfertas = async () => {
+            const response = await GetAllOffers();
+            console.log(response);
+        };
+    </script>
+</head>
+<body>
+    <button onclick="mostrarOfertas()" class="p-4 bg-blue-500 text-white rounded hover:bg-blue-600">Mostrar Ofertas</button>
+
+
+
+
+    
+</body>
+</html>
